@@ -73,22 +73,22 @@ func (c Card) String() string {
 
 type Deck struct {
 	Cards  []Card
-	count  int
-	random *rand.Rand
+	Count  int
+	Random *rand.Rand
 }
 
 type Option func(*Deck) error
 
 func WithNumberOfDecks(number int) Option {
 	return func(d *Deck) error {
-		d.count = number
+		d.Count = number
 		return nil
 	}
 }
 
 func WithRandom(random *rand.Rand) Option {
 	return func(d *Deck) error {
-		d.random = random
+		d.Random = random
 		return nil
 	}
 }
@@ -96,15 +96,15 @@ func WithRandom(random *rand.Rand) Option {
 func NewDeck(opts ...Option) Deck {
 
 	deck := &Deck{
-		count:  1,
-		random: rand.New(rand.NewSource(time.Now().UnixNano())),
+		Count:  1,
+		Random: rand.New(rand.NewSource(time.Now().UnixNano())),
 	}
 
 	for _, o := range opts {
 		o(deck)
 	}
 
-	for i := 0; i < deck.count; i++ {
+	for i := 0; i < deck.Count; i++ {
 		for _, suit := range suits {
 			for _, rank := range ranks {
 				deck.Cards = append(deck.Cards, Card{Suit: suit, Rank: rank})
@@ -113,7 +113,7 @@ func NewDeck(opts ...Option) Deck {
 		}
 	}
 	shuffled_cards := make([]Card, len(deck.Cards))
-	perm := deck.random.Perm(len(deck.Cards))
+	perm := deck.Random.Perm(len(deck.Cards))
 
 	for i, j := range perm {
 		shuffled_cards[i] = deck.Cards[j]

@@ -1,9 +1,10 @@
 package cards_test
 
 import (
-	"cards"
 	"math/rand"
 	"testing"
+
+	"github.com/mbarley333/cards"
 )
 
 func TestShuffle(t *testing.T) {
