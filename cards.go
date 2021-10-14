@@ -1,4 +1,4 @@
-package cardsymbols
+package cards
 
 import (
 	"fmt"
