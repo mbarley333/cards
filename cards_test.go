@@ -20,7 +20,7 @@ func TestShuffle(t *testing.T) {
 
 	got := deck.Cards[0].String()
 
-	want := "Nine of Diamonds"
+	want := "9 of Diamonds"
 
 	if want != got {
 		t.Fatalf("want: %s, got: %s", want, got)
