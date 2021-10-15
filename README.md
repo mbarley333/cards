@@ -4,9 +4,8 @@ Playing card library for use in card games like Blackjack.
 
 
 ## Sample Card Output
-```bash
-  [4♠][9♥][3♥][K♦]
-```
+[4♠][9♥][3♥][K♦]
+
 
 ## Getting Started
 Import cards library into your go package
