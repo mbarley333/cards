@@ -16,7 +16,7 @@ import (
 )
 ```
 
-## cards features
+## Features
 * create shuffled deck(s) of any size
 ```bash
   deck := cards.NewDeck(
