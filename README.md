@@ -8,7 +8,12 @@ Emoji playing card library for use in card games like Blackjack.
 
 
 # Getting started
-Import cards library into your go package
+* Run this command inside your project
+```bash
+go get github.com/mbarley333/cards
+```
+
+* Import cards library into your go package
 ```bash
 import (
   "github.com/mbarley333/cards"
