@@ -28,7 +28,7 @@ import (
 
 ```bash
   card := cards.Card{cards.Rank: Ace, cards.Suit: Heart}
-  card.Render()
+  fmt.Println(card.Render())
 ```
 
 
