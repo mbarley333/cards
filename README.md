@@ -1,13 +1,11 @@
 # cards
 
-Playing card library for use in card games like Blackjack.  
+Emoji playing card library for use in card games like Blackjack.  
 
-
-## Sample Card Output
+# Sample output
 [4♠][9♥][3♥][K♦]
 
-
-## Getting Started
+# Getting started
 Import cards library into your go package
 ```bash
 import (
@@ -15,7 +13,7 @@ import (
 )
 ```
 
-## Features
+# Features
 * create shuffled deck(s) of any size
 ```bash
   deck := cards.NewDeck(
@@ -28,6 +26,7 @@ import (
   card := cards.Card{cards.Rank: Ace, cards.Suit: Heart}
   card.Render()
 ```
+
 
 
 
