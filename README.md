@@ -15,9 +15,8 @@ go get github.com/mbarley333/cards
 
 * Import cards library into your go package
 ```bash
-import (
-  "github.com/mbarley333/cards"
-)
+import "github.com/mbarley333/cards"
+
 ```
 
 
